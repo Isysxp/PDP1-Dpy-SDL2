@@ -507,7 +507,11 @@ t_stat vid_create_window(void)
     int32 *sptr,cntr;
     // Create an application window with the following settings:
     SDL_Init (SDL_INIT_VIDEO);
+#if PIX_SCALE == RES_HALF
     bckgnd = SDL_LoadBMP("Type30A.bmp");
+#else
+	bckgnd = SDL_LoadBMP("Type30A_Large.bmp");
+#endif
     window = SDL_CreateWindow(
         vid_title,							// window title
         SDL_WINDOWPOS_UNDEFINED,					// initial x position
