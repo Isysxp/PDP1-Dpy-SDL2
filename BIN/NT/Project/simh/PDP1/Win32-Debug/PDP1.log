@@ -1,0 +1,5 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  sim_video.c
+C:\Users\iansc\source\repos\PDP1_Dpy\sim_video.c(507,17): warning C4101: 'cntr': unreferenced local variable
+C:\Users\iansc\source\repos\PDP1_Dpy\sim_video.c(930,10): warning C4133: '=': incompatible types - from 'unsigned char *' to 'Uint32 *'
+  PDP1.vcxproj -> C:\Users\iansc\source\repos\PDP1_Dpy\BIN\NT\Win32-Debug\PDP1.exe

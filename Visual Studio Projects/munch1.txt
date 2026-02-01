@@ -1,0 +1,4 @@
+att ptr munch.rim
+set dpy ena
+set cpu tw=1000
+boot ptr

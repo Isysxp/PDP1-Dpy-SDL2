@@ -1,0 +1,5 @@
+set dpy enable
+load munch.rim
+set throttle 1%
+run
+
