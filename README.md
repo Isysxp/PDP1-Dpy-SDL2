@@ -21,6 +21,13 @@ make pdp1
 sim> set dpy ena
 sim> att dpy pidp1 (where pidp1 is the name of your PiDP1 machine)<br>
 And you should see:<br>
-![Project Screenshot](Assets/Screenshot.jpg)
+![Project Screenshot](Assets/Screenshot.jpg)<br>
+The first thing you may note is that to Type 30 graphic has 4 black corners around the actual screen.
+This is becasue SDL2 does not support per pixel transparency.
+One option to fix this is the change the window background to black as I have done for the example image above.
+The other alternative if you simply must have a display like this:<br>
+![Project Screenshot](Assets/SDL3.jpg)<br>
+
+ 
 
 
