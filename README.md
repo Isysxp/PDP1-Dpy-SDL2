@@ -20,7 +20,7 @@ make pdp1
 7. At the sim prompt on the display machine:
 sim> set dpy ena
 sim> att dpy pidp1 (where pidp1 is the name of your PiDP1 machine)<br>
-And you should see:
+And you should see:<br>
 ![Project Screenshot](Assets/Screenshot.jpg)
 
 
