@@ -24,9 +24,21 @@ And you should see:<br>
 ![Project Screenshot](Assets/Screenshot.jpg)<br>
 The first thing you may note is that to Type 30 graphic has 4 black corners around the actual screen.
 This is becasue SDL2 does not support per pixel transparency.
-One option to fix this is the change the window background to black as I have done for the example image above.
-The other alternative if you simply must have a display like this:<br>
+One option to fix this is to change the window background to black as I have done for the example image above.
+The other alternative is if you simply must have a display like this:<br>
 ![Project Screenshot](Assets/SDL3.jpg)<br>
+Then you will need the SDL3 version of this app and a much bigger monitor!
+This image is of my Windows machine running at 5120x2160 (150%).
+To build this, the options are to use the Visual Studio app which includes the SDL3 libraries here:
+Or, install SDL3 yourself into Raspbian Bookworm or Trixie and folow the instructions in the SDL3 repo as above.
+Needless to say, this can get a bit involved and you may have to change the desktop window manager to xfwm4.
+The reaons for this is that the wayland compositor does not directly support per pixel transparency on the Pi5.
+But, it does work on a Pi4 which I find slightly surprising.<br>
+<br>
+Ian Schofield Jan 2026<br>
+
+
+
 
  
 
