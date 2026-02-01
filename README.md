@@ -21,6 +21,6 @@ make pdp1
 sim> set dpy ena
 sim> att dpy pidp1 (where pidp1 is the name of your PiDP1 machine)<br>
 And you should see:
-![Project Screenshot](Assets/Screenshot.jpeg)
+![Project Screenshot](Assets/Screenshot.jpg)
 
 
