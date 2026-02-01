@@ -19,8 +19,8 @@ make pdp1
 6. Start you favourite app on the PiDP1 machine eg dpys5-demo.rim
 7. At the sim prompt on the display machine:
 sim> set dpy ena
-sim> att dpy pidp1 (where pidp1 is the name of your PiDP1 machine)
+sim> att dpy pidp1 (where pidp1 is the name of your PiDP1 machine)<br>
 And you should see:
-
+![Project Screenshot](Assets/screenshot.jpeg)
 
 
