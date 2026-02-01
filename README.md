@@ -30,11 +30,12 @@ The other alternative is if you simply must have a display like this:<br>
 Then you will need the SDL3 version of this app and a much bigger monitor!
 This image is of my Windows machine running at 5120x2160 (150%).
 To build this, the options are to use the Visual Studio app which includes the SDL3 libraries.<br>
-SDL3 version:
+SDL3 version: https://github.com/Isysxp/PDP1-DPY
 Or, install SDL3 yourself into Raspbian Bookworm or Trixie and folow the instructions in the SDL3 repo as above.
 Needless to say, this can get a bit involved and you may also have to change the desktop window manager to xfwm4.
 The reason for this is that the wayland compositor does not directly support per pixel transparency on the Pi5 using the default Raspbian image.
 But, it does work on a Pi4 which I find slightly surprising.<br>
+Info would suggest that it is something to do with the kms driver????<br>
 <br>
 Ian Schofield Jan 2026<br>
 
