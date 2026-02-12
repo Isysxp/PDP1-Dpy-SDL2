@@ -39,6 +39,18 @@ But, it does work on a Pi4 which I find slightly surprising.<br>
 Info would suggest that it is something to do with the kms driver????<br>
 # LightPen
 This version of the PDP1-DPY has now got Lightpen functionality.<br>
+Look in the BIN directory for LPTest.bin and Lightpen.rim.
+I suggest you try Lightpen.rim first. This file will need to be copied to the PiDP1 tapes directory where it can be selected using the paper tape reader app.<br>
+When loaded into the PiDP1 you should see a cross on the screen that can be dragged around with the mouse.<br>
+The LPTest app is a copy of the Lightpen MAINDEC. Once loaded, nothing seems to happen.<br>
+Flip Sense switch 4 up and you should see a scanning square on the display. Click on this to show what the Lightpen is 'seeing'.<br>
+Try the other sense switches and see what happens.<br>
+# Other settings
+The app is built using SDL2 and the Simh makfile in the root directory. You can change the size of the display and the size of a pixel via editing this file.<br>
+The line to change is 1093. The PIX_SCALE cad be RES_HALF (small display) or RES_FULL (large display).<br>
+The PIX_SIZE can be 1,2,3 or 4. This determines the screen spot size. 1 is too small to be useful and 4 gives a quite large spot on a small display.<br>
+If you change these parameters, type as follows:<br>
+In the BIN directory, type rm pdp1 then type cd .. the type make pdp1 then type cd BIN then type ./pdp1 and off you go again.<br>
 <br>
 Ian Schofield Jan 2026<br>
 
