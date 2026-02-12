@@ -76,7 +76,7 @@
 #define PEN_RADIUS 10
 #endif /* PEN_RADIUS not defined */
 
-int DISPLAY_SIZE = (2048 / PIX_SCALE);  /* Max display size in each dimension */
+extern int DISPLAY_SIZE;  /* Max display size in each dimension */
 
 
 #ifndef PIX_SIZE

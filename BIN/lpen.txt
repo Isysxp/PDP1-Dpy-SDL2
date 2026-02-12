@@ -1,0 +1,4 @@
+load LPTest.bin
+set dpy ena
+dep ss 10
+go 0
