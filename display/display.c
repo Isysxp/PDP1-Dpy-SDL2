@@ -76,9 +76,11 @@
 #define PEN_RADIUS 4
 #endif /* PEN_RADIUS not defined */
 
+#define DISPLAY_SIZE (2048/PIX_SCALE)  /* Max display size in each dimension */
+
 
 #ifndef PIX_SIZE
-#define PIX_SIZE 3
+#define PIX_SIZE 4
 #endif
 
 /*
@@ -258,6 +260,8 @@ static int refresh_interval;
 static int ncolors;
 static enum display_type display_type;
 static int scale;
+extern int dpy_scale;    /* RES_{FULL,HALF}*/
+extern int dpy_psize;      /* 1,2,3,4 */
 #ifdef  __cplusplus
 extern "C" {
 #endif
@@ -265,6 +269,7 @@ extern "C" {
 extern double *colmap;
 extern int32 pxval,pxdisplay;
 extern t_stat vid_setpixel(int ix,int iy,int level,int color);
+extern int init_h, init_w;
 
 #ifdef  __cplusplus
 }
@@ -487,11 +492,14 @@ display_point(int x,        /* 0..xpixels (unscaled) */
           int color)        /* for VR20! 0 or 1 */
 {
     long lx, ly;
+    int xref, yref;
 
-	/* This should never happen!! */
-	
+    /* This should never happen!! */
+
     if (!initialized)
         return 0;
+    xref = init_w / 2 - DISPLAY_SIZE / 4;
+    yref = init_h / 2 - DISPLAY_SIZE / 4;
 
     /* scale x and y to the displayed number of pixels */
     /* handle common cases quickly */
@@ -513,8 +521,8 @@ display_point(int x,        /* 0..xpixels (unscaled) */
  
     if (ws_lp_x == -1 || ws_lp_y == -1)
         return 0;
-    lx = x - ws_lp_x;
-    ly = y - ws_lp_y;
+    lx = x - ws_lp_x + xref;
+    ly = y - ws_lp_y - yref;
     return lx*lx + ly*ly <= scaled_pen_radius_squared;
 } /* display_point */
 

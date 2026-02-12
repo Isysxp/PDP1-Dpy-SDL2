@@ -53,7 +53,7 @@
 
 
 #ifndef PIX_SIZE
-#define PIX_SIZE 1
+#define PIX_SIZE 4
 #endif
 
 #ifndef PIX_SCALE
@@ -182,6 +182,7 @@ ws_poll(int *valp, int maxus)
             if (!old_lp_sw && !display_tablet)
                 if (vid_set_cursor (1, cross_cursor->width, cross_cursor->height, cross_cursor->data, cross_cursor->mask, cross_cursor->hot_x, cross_cursor->hot_y) == SCPE_OK)
                    old_lp_sw = display_lp_sw = 0;        /* Stop LP event on window focus */
+            vid_mouse_click(ws_lp_x, ws_lp_y, 1);
             }
         else {
             ws_lp_x = ws_lp_y = -1;

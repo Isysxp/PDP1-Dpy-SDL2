@@ -1,5 +1,34 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
   sim_video.c
-C:\Users\iansc\source\repos\PDP1_Dpy\sim_video.c(507,17): warning C4101: 'cntr': unreferenced local variable
-C:\Users\iansc\source\repos\PDP1_Dpy\sim_video.c(930,10): warning C4133: '=': incompatible types - from 'unsigned char *' to 'Uint32 *'
-  PDP1.vcxproj -> C:\Users\iansc\source\repos\PDP1_Dpy\BIN\NT\Win32-Debug\PDP1.exe
+  sim_tmxr.c
+C:\Users\iansc\source\repos\PDP1-Dpy-SDL2\sim_video.c(512,15): warning C4101: 'cntr': unreferenced local variable
+C:\Users\iansc\source\repos\PDP1-Dpy-SDL2\sim_video.c(768,16): warning C4101: 'rsl': unreferenced local variable
+  sim_timer.c
+  sim_tape.c
+  sim_sock.c
+  sim_serial.c
+  sim_fio.c
+  sim_ether.c
+  sim_disk.c
+  sim_console.c
+  scp.c
+  pdp1_sys.c
+  pdp1_stddev.c
+  pdp1_lp.c
+  pdp1_dt.c
+  pdp1_drm.c
+  pdp1_dpy.c
+C:\Users\iansc\source\repos\PDP1-Dpy-SDL2\PDP1\pdp1_dpy.c(44,8): warning C4142: 'dpy_socket': benign redefinition of type
+      C:\Users\iansc\source\repos\PDP1-Dpy-SDL2\sim_video.h(202,12):
+      see declaration of 'dpy_socket'
+  
+  pdp1_dcs.c
+  pdp1_cpu.c
+  pdp1_clk.c
+  Generating Code...
+  Compiling...
+  sim_ws.c
+C:\Users\iansc\source\repos\PDP1-Dpy-SDL2\display\sim_ws.c(185,13): warning C4013: 'vid_mouse_click' undefined; assuming extern returning int
+  display.c
+  Generating Code...
+  PDP1.vcxproj -> C:\Users\iansc\source\repos\PDP1-Dpy-SDL2\BIN\NT\Win32-Debug\PDP1.exe

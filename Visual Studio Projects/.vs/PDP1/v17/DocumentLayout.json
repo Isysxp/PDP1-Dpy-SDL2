@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\Visual Studio Projects\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB017838-5DC5-4B9D-A8F7-7B36AA4A3331}|PDP1.vcxproj|C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\display\\display.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB017838-5DC5-4B9D-A8F7-7B36AA4A3331}|PDP1.vcxproj|C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\sim_video.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB017838-5DC5-4B9D-A8F7-7B36AA4A3331}|PDP1.vcxproj|C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\display\\sim_ws.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB017838-5DC5-4B9D-A8F7-7B36AA4A3331}|PDP1.vcxproj|C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\PDP1\\pdp1_dpy.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "pdp1_dpy.c",
+              "DocumentMoniker": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\PDP1\\pdp1_dpy.c",
+              "RelativeDocumentMoniker": "..\\PDP1\\pdp1_dpy.c",
+              "ToolTip": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\PDP1\\pdp1_dpy.c",
+              "RelativeToolTip": "..\\PDP1\\pdp1_dpy.c",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-12T10:24:37.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sim_ws.c",
+              "DocumentMoniker": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\display\\sim_ws.c",
+              "RelativeDocumentMoniker": "..\\display\\sim_ws.c",
+              "ToolTip": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\display\\sim_ws.c",
+              "RelativeToolTip": "..\\display\\sim_ws.c",
+              "ViewState": "AgIAACEAAAAAAAAAAAArwDcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-11T22:40:32.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "display.c",
+              "DocumentMoniker": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\display\\display.c",
+              "RelativeDocumentMoniker": "..\\display\\display.c",
+              "ToolTip": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\display\\display.c",
+              "RelativeToolTip": "..\\display\\display.c",
+              "ViewState": "AgIAAMABAAAAAAAAAAAQwNUBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-11T22:19:46.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sim_video.c",
+              "DocumentMoniker": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\sim_video.c",
+              "RelativeDocumentMoniker": "..\\sim_video.c",
+              "ToolTip": "C:\\Users\\iansc\\source\\repos\\PDP1-Dpy-SDL2\\sim_video.c",
+              "RelativeToolTip": "..\\sim_video.c",
+              "ViewState": "AgIAALYDAAAAAAAAAAAQwMoDAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-01T19:27:50.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
