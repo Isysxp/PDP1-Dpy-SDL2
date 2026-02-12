@@ -467,7 +467,7 @@ intensify(int x,            /* 0..xpixels */
       int color)            /* for VR20! 0 or 1 */
 {
  
-int pix_size=PIX_SIZE;
+int pix_size = PIX_SIZE;
 
     if (x < 0 || x >= xpixels - pix_size || y < pix_size-1 || y >= ypixels - pix_size)
         return 0;           /* limit to display */
