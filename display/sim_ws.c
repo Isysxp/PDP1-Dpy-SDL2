@@ -63,6 +63,7 @@
 #define Uint8 uint8
 
 int (*vid_display_kb_event_process)(SIM_KEY_EVENT *kev) = NULL;
+void vid_mouse_click(int x, int y, int b1_state);
 
 /*
  * light pen location
@@ -177,8 +178,8 @@ ws_poll(int *valp, int maxus)
             ws_lp_x = mev.x_pos;
             ws_lp_y = (ypixels - 1) - mev.y_pos; /* range 0 - (ypixels-1) */
             /* convert to display coordinates */
-            ws_lp_x /= pix_size;
-            ws_lp_y /= pix_size;
+            //ws_lp_x /= pix_size;
+            //ws_lp_y /= pix_size;
             if (!old_lp_sw && !display_tablet)
                 if (vid_set_cursor (1, cross_cursor->width, cross_cursor->height, cross_cursor->data, cross_cursor->mask, cross_cursor->hot_x, cross_cursor->hot_y) == SCPE_OK)
                    old_lp_sw = display_lp_sw = 0;        /* Stop LP event on window focus */

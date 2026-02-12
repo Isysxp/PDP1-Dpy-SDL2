@@ -73,10 +73,10 @@
 
 /* select a default light-pen hit radius if display_init() not called */
 #ifndef PEN_RADIUS
-#define PEN_RADIUS 4
+#define PEN_RADIUS 10
 #endif /* PEN_RADIUS not defined */
 
-#define DISPLAY_SIZE (2048/PIX_SCALE)  /* Max display size in each dimension */
+int DISPLAY_SIZE = (2048 / PIX_SCALE);  /* Max display size in each dimension */
 
 
 #ifndef PIX_SIZE
@@ -523,6 +523,7 @@ display_point(int x,        /* 0..xpixels (unscaled) */
         return 0;
     lx = x - ws_lp_x + xref;
     ly = y - ws_lp_y - yref;
+//	printf("display_point: x=%d y=%d lp_x=%d lp_y=%d lx=%d ly=%d\r\n", x, y, ws_lp_x, ws_lp_y, lx, ly);
     return lx*lx + ly*ly <= scaled_pen_radius_squared;
 } /* display_point */
 
@@ -545,6 +546,7 @@ display_init(enum display_type type, int sf, void *dptr)
 {
     static int init_failed = 0;
     struct display *dp;
+    int pensz = PEN_RADIUS;
 
     if (initialized) {
         /* cannot change type once started */
@@ -575,7 +577,7 @@ display_init(enum display_type type, int sf, void *dptr)
     ypixels = ypoints / scale;
 
     /* set default pen radius now that scale is set */
-    display_lp_radius(PEN_RADIUS);
+    display_lp_radius(pensz);
 
     ncolors = 1;
 	

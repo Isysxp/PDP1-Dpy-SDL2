@@ -35,7 +35,7 @@ in this Software without prior written authorization from the author.
 #ifndef PIX_SIZE
 #define PIX_SIZE 4
 #endif
-#define DISPLAY_SIZE (2048/PIX_SCALE)  /* Max display size in each dimension */
+
 #include "sim_defs.h"
 #include "sim_video.h"
 #include "sim_sock.h"
@@ -52,7 +52,7 @@ int32 pxval, pxdisplay;								/* Also referenced in display.c */
 int nostore = 0;							            /* Enables storage display. Always defined. */
 int dflag = 0;                                      /* DisplayUpdate marker flag */
 int esc = 0;                                        /* Escape marker for PiDP1 interface */
-
+int DISPLAY_SIZE;									/* Max display size in each dimension */
 
 char vid_release_key[64] = "Ctrl-Right-Shift";
 
@@ -531,6 +531,9 @@ t_stat vid_create_window(void)
 		printf("Could not create SDL window: %s\n", SDL_GetError());
 		exit(-1);
 	}
+	init_h = bckgnd->h;
+	init_w = bckgnd->w;
+	DISPLAY_SIZE = (2048 / dpy_scale);
 	SDL_SetWindowPosition(window, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
 	surface = SDL_GetWindowSurface(window);
 	/* Check the bitdepth of the surface */
@@ -671,7 +674,7 @@ void vid_mouse_click(int ix, int iy, int state)
 {
 	int cmd = 0;
 	if (state) {
-		//	printf("IX/Y:%d %d\r\n", ix, iy);
+//		printf("IX/Y:%d %d\r\n", ix, iy);
 		ix -= bckgnd->w / 2 - DISPLAY_SIZE / 4;
 		ix *= dpy_scale;
 		ix -= 512;
