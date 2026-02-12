@@ -37,8 +37,8 @@ Needless to say, this can get a bit involved and you may also have to change the
 The reason for this is that the wayland compositor does not directly support per pixel transparency on the Pi5 using the default Raspbian image.
 But, it does work on a Pi4 which I find slightly surprising.<br>
 Info would suggest that it is something to do with the kms driver????<br>
-NB One thing that may occur is that the newtworking can get in a bit of a knot and can bring the PiDP1 app to a halt.<br>
-I haven't found out the cause of this as yet.....<br>
+# LightPen
+This version of the PDP1-DPY has now got Lightpen functionality.<br>
 <br>
 Ian Schofield Jan 2026<br>
 
