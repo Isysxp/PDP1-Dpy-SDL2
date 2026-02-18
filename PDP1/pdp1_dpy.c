@@ -149,7 +149,7 @@ return io;
 
 t_stat dpy_attach(UNIT* uptr, CONST char* cptr)
 {
-    dpy_socket = sim_connect_sock_ex(NULL, "3400", cptr, NULL, 0);
+    dpy_socket = sim_connect_sock_ex(NULL, "3400", cptr, NULL, SIM_SOCK_OPT_NODELAY);
     if (dpy_socket == INVALID_SOCKET)
 		return SCPE_UNATT;
 	sim_is_running = 1;                       /* inform socket code that sim is running */  
