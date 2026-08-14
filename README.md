@@ -51,6 +51,7 @@ The line to change is 1093. The PIX_SCALE cad be RES_HALF (small display) or RES
 The PIX_SIZE can be 1,2,3 or 4. This determines the screen spot size. 1 is too small to be useful and 4 gives a quite large spot on a small display.<br>
 If you change these parameters, type as follows:<br>
 In the BIN directory, type rm pdp1 then type cd .. the type make pdp1 then type cd BIN then type ./pdp1 and off you go again.<br>
+*** NB If you happen to do a 'make clean' of this app, you will need to re-clone the files in the BIN directory from above as these will be deleted along with the PDP1 binary. ***<br>
 <br>
 Ian Schofield Jan 2026<br>
 
